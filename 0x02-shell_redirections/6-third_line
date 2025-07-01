@@ -1,3 +1,2 @@
-echo -e '#!/bin/bash\nhead -n 3 iacta | tail -n 1' > 6-third_line
-chmod +x 6-third_line
-
+#!/bin/bash
+head -n 3 iacta | tail -n 1
