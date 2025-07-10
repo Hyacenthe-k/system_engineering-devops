@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-# This script lists files, showing part after first dash using a for loop
-for file in *; do
-  name="${file#*-}"
-  echo "$name"
+# displays the content of the current working directory.
+
+for i in *
+do
+    echo "$i" | cut -d'-' -f2
 done
