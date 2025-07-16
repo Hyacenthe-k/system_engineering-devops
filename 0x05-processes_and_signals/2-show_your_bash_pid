@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # This script filters the current processes to show only bash-related ones
 # shellcheck disable=SC2009
 ps aux | grep bash
