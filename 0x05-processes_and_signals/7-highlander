@@ -1,0 +1,12 @@
+#!/bin/bash
+# 7-highlander
+
+# Trap SIGTERM signal and run custom action
+trap 'echo "I am invincible!!!"' SIGTERM
+
+# Infinite loop printing message every 2 seconds
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
