@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # 7-highlander
 
 # Trap SIGTERM signal and run custom action
