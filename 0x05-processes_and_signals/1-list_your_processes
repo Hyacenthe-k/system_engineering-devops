@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Displays a comprehensive list of all running processes with hierarchy
+# Displays all running processes with hierarchy in human-readable format
 
-ps ax -o user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,cmd --forest
+ps ax -o user:12,pid:6,%cpu:5,%mem:5,vsz:8,rss:8,tty:8,stat:5,start:12,time:8,cmd --forest
