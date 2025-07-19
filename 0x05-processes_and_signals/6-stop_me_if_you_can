@@ -1,11 +1,4 @@
 #!/usr/bin/env bash
 # This script stops '4-to_infinity_and_beyond' without using kill or killall
 
-PID=$(pgrep -f "4-to_infinity_and_beyond")
-
-if [ -n "$PID" ]; then
-    echo "15" > /proc/"$PID"/oom_score_adj
-    # Sending SIGTERM directly through /proc (if permissions allow)
-    echo "Terminating process $PID"
-    kill -s TERM "$PID" 2>/dev/null
-fi
+pkill -f "4-to_infinity_and_beyond"
