@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-# Sends SIGTERM to the 7-highlander process
+# 8-beheaded_process
 
-PID=$(pgrep -f "7-highlander")
+# Find the PID of the 7-highlander process
+pid=$(pgrep -f "7-highlander")
 
-if [ -n "$PID" ]; then
-    kill -s TERM "$PID"
+# Send SIGKILL (signal 9) to the process if found
+if [ -n "$pid" ]; then
+    kill -9 "$pid"
 fi
